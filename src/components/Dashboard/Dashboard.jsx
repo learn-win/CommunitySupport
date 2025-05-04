@@ -172,7 +172,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     await auth.signOut();
     const navigate = useNavigate();
-    navigate("/");
+    navigate("/login");
   };
 
   return (
