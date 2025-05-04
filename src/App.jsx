@@ -6,7 +6,7 @@ import ForgotPasswordPage from "./components/Auth/ForgotPasswordPage";
 import Dashboard from "./components/Dashboard/Dashboard";
 import MessagesPage from "./components/Messages/MessagesPage";
 import ProfilePage from "./components/Profile/ProfilePage";
-import SearchPage from "./components/search/SearchPage"; // Import SearchPage
+import SearchPage from "./components/Search/SearchPage"; // Import SearchPage
 import CreatePost from "./components/CreatePost/CreatePost"; // Import CreatePost
 const App = () => {
   return (
