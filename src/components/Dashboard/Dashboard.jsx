@@ -9,6 +9,7 @@ import CreatePost from "../CreatePost/CreatePost";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Dashboard.css";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const [userName, setUserName] = useState("");
@@ -170,7 +171,8 @@ const Dashboard = () => {
 
   const handleLogout = async () => {
     await auth.signOut();
-    window.location.replace("/login");
+    const navigate = useNavigate();
+    navigate("/");
   };
 
   return (
