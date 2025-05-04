@@ -1,0 +1,113 @@
+/* ProfilePage.css */
+
+/* Apply styles only within the profile-page-container */
+.profile-page-container {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile container to center content */
+.profile-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Other profile page styles are also scoped here */
+.card-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.input-custom {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-custom:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px rgba(38, 143, 255, 0.6);
+}
+
+.btn-custom {
+  padding: 1rem;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: rgba(72, 187, 120, 0.2);
+  color: #2f9e59;
+}
+
+.alert-danger {
+  background-color: rgba(237, 76, 76, 0.2);
+  color: #c53030;
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.4rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+}
