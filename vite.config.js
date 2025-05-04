@@ -7,4 +7,6 @@ export default defineConfig({
     host: true, // Listen on all network interfaces (including IP address)
     port: 5173, // Or any port you prefer
   },
+  base: '/CommunitySupport/', // 👈 IMPORTANT
+
 });
